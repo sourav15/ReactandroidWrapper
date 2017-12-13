@@ -41,6 +41,5 @@ repositories {
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
-    compile 'com.google.code.gson:gson:2.1'
     compile 'com.livquik:qwsdkui:2.1.6'
 }
