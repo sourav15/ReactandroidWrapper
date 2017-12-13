@@ -11,7 +11,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Package implements ReactPackage {
-    
+
     public List<Class<? extends JavaScriptModule>> createJSModules() {
         return Collections.emptyList();
     }
