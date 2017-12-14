@@ -48,4 +48,14 @@ public class Module extends ReactContextBaseJavaModule {
         qwParams.setSignature(signature);
         QWNetworkSDKInit.init(getCurrentActivity(), qwParams, QWConstants.QUIK_PAY);
     }
+
+    @ReactMethod
+    public void setPreferences(String mobile, String partnerId, String signature, String env) {
+        QWParams qwParams = new QWParams();
+        qwParams.setMobile(mobile);
+        qwParams.setEnv(env);
+        qwParams.setPartnerid(partnerId);
+        qwParams.setSignature(signature);
+        QWNetworkSDKInit.init(getCurrentActivity(), qwParams, QWConstants.SAVE_CREDENTIAL);
+    }
 }
