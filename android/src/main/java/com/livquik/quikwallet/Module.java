@@ -1,13 +1,11 @@
 package com.livquik.quikwallet;
 
-import android.content.Context;
 import android.widget.Toast;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.livquik.qwnw.QWNetworkSDKInit;
-import com.livquik.qwnw.QWSDKLibInit;
 import com.livquik.qwnw.core.QWConstants;
 import com.livquik.qwnw.model.QWParams;
 
@@ -48,6 +46,6 @@ public class Module extends ReactContextBaseJavaModule {
         qwParams.setEnv(env);
         qwParams.setPartnerid(partnerId);
         qwParams.setSignature(signature);
-        QWNetworkSDKInit.init(getReactApplicationContext(), qwParams, QWConstants.QUIK_PAY);
+        QWNetworkSDKInit.init(getCurrentActivity(), qwParams, QWConstants.QUIK_PAY);
     }
 }
