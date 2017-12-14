@@ -37,4 +37,6 @@
     ```javascript
     import qwsdk from 'livquiksdk';
     qwsdk.init('Mobile','PartnerId','signature','ENV');
+    
+    qwsdk.setPreferences('Mobile','PartnerId','signature','ENV');    //Save important data in setPrefernce for NFC payment
     ```
