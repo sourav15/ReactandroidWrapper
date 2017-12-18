@@ -41,5 +41,5 @@ repositories {
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
-    compile 'com.livquik:qwsdkui:2.1.6'
+    compile 'com.livquik:zaggle:1.0.0'
 }
